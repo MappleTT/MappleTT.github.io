@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Maple&#39;s Blog</title>
+    <title>Leetcode-20 · Maple&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">Maple&#39;s Blog.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">Leetcode-20</a>
+            </div>
+    </div>
     
     <a class="home-link" href="/">Maple's Blog.</a>
 </header>
@@ -220,24 +231,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            Leetcode-20
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class="post-intro-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">275</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/04/08</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,137 +399,52 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/02/27/Leetcode-70/">
-            
-                <span>Leetcode-70</span>
-        </a>
-        <div class="abstract-content">
-            这是一个简单的DP，类似于斐波那契数列。附上题目链接
-实现的代码如下：
-1234567891011121314151617181920212223242526#include&lt;iostream&gt;#include&lt;vector&gt;using namespace std;vector &lt;int&gt;memo;class Solution &#123;public:    int climbStairs(int n) &#123;        vector&lt;int&gt; data(n + 1, -1);        data[0] = 1;      ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/27</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/02/24/排序/">
-            
-                <span>排序算法</span>
-        </a>
-        <div class="abstract-content">
-            有时候自己学了很久很久，学习的效果还是不好，慢慢反思，后来发现自己一直把大量的时间来学习新的知识，旧的知识基本上没有留什么时间来消化，最后的最后就是“感觉自己什么都学了，但是自己什么都不会”。学习有点乱的时候停一停，给了自己一些缓解的时间，找到问题的症结除治，然后努力在原有的基础上有新的突破……众所周知，我们学了很多的排序算法，真的学多了之后会特别的乱，所以特别的想花点时间整理一下O(∩_∩)O~
-首先，是最简单的初级排序算法
-1.选择排序12345678910111213141516//选择排序的时间复杂度为O(n^2)；//本排序是由小到大排的void SelectionSort(i...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/24</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="算法与数据结构">算法与数据结构</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/02/14/P3367 【模板】并查集/">
-            
-                <span>P3367 【模板】并查集</span>
-        </a>
-        <div class="abstract-content">
-            说明一下：因为这是自己第一次在博客上写题解，自己刚好又做了一个模板题，所以就Git上来了…..(^__^) xixi
-题目描述如题，现在有一个并查集，你需要完成合并和查询操作。
-输入输出格式
-输入格式：1、第一行包含两个整数N、M，表示共有N个元素和M个操作。
-2、接下来M行，每行包含三个整数Zi、Xi、Yi
-3、当Zi=1时，将Xi与Yi所在的集合合并
-4、当Zi=2时，输出Xi与Yi是否在同一集合内，是的话输出Y；否则话输出N
-输出格式：如上，对于每一个Zi=2的操作，都有一行输出，每行包含一个大写字母，为Y或者N
-输入输出样例
-输入样例#1:
-123456784 72 1 21 1...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/14</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="C++">C++</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="洛谷">洛谷</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/02/12/hello-world/">
-            
-                <span>Hello Maple</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! My name is Maple.This is my very first post. 
+            <main class="main post-page">
+    <article class="article-entry">
+        <p><a href="https://leetcode-cn.com/problems/valid-parentheses/" target="_blank" rel="noopener">isValid-链接</a></p>
+<p>实现的代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isValid(string s) &#123;</span><br><span class="line">        stack&lt;char&gt; arr;</span><br><span class="line">        for (int i = 0; i &lt; s.size(); i++) &#123;</span><br><span class="line">            char m;</span><br><span class="line">            //如果是左边的括号的话就入栈</span><br><span class="line">            if (s[i] == &apos;(&apos; || s[i] == &apos;[&apos; || s[i] == &apos;&#123;&apos;) &#123;</span><br><span class="line">                arr.push(s[i]);</span><br><span class="line">            &#125;</span><br><span class="line">            //如果是右边的括号的话进行相应的匹配</span><br><span class="line">            else if(s[i]==&apos;)&apos;)&#123;</span><br><span class="line">            //首先要保证栈不为空</span><br><span class="line">                if(!arr.empty())</span><br><span class="line">                &#123;</span><br><span class="line">            //如果栈顶的值与之对应相匹配，弹栈    </span><br><span class="line">                    if(arr.top()==&apos;(&apos;)</span><br><span class="line">                        arr.pop();</span><br><span class="line">            //否则返回false           </span><br><span class="line">                    else </span><br><span class="line">                        return false;</span><br><span class="line">                &#125;</span><br><span class="line">                else</span><br><span class="line">                    return false;</span><br><span class="line">            &#125;</span><br><span class="line">            else if(s[i]==&apos;]&apos;)&#123;</span><br><span class="line">                if(!arr.empty())</span><br><span class="line">                &#123;</span><br><span class="line">                    if(arr.top()==&apos;[&apos;)</span><br><span class="line">                        arr.pop();</span><br><span class="line">                    else </span><br><span class="line">                        return false;</span><br><span class="line">                &#125;</span><br><span class="line">                else</span><br><span class="line">                    return false;</span><br><span class="line">            &#125;</span><br><span class="line">            else if(s[i]==&apos;&#125;&apos;)&#123;</span><br><span class="line">                if(!arr.empty())</span><br><span class="line">                &#123;</span><br><span class="line">                    if(arr.top()==&apos;&#123;&apos;)</span><br><span class="line">                        arr.pop();</span><br><span class="line">                    else </span><br><span class="line">                        return false;</span><br><span class="line">                &#125;</span><br><span class="line">                else</span><br><span class="line">                    return false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        //最后如果栈不为空，说明没有匹配所有的括号，则返回false</span><br><span class="line">        if (!arr.empty())</span><br><span class="line">            return false;</span><br><span class="line">        else</span><br><span class="line">            return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>其实这就是一道括号匹配问题的题，就是个板子……如果你对栈这个数据结构不了解的话，可以去看看相关的知识</p>
 
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/12</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
     </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="http://yoursite.com">Maple</a>
+            </p><p>原文链接：<a href="http://yoursite.com/2019/04/08/leetcode-20/">http://yoursite.com/2019/04/08/leetcode-20/</a>
+            </p><p>发表日期：<a href="http://yoursite.com/2019/04/08/leetcode-20/">April 8th 2019, 7:38:47 pm</a>
+            </p><p>更新日期：<a href="http://yoursite.com/2019/04/08/leetcode-20/">April 8th 2019, 7:38:47 pm</a>
+            </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2019/04/08/leetcode-50/" title="Leetcode-50">
+                    <div class="prevTitle">Leetcode-50</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -567,6 +543,24 @@
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -898,6 +892,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"superSample":2,"width":100,"height":160,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
