@@ -78,6 +78,8 @@
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
     
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -201,10 +203,8 @@
 </head>
 
     
-        <body class="home-body">
     
-    
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
@@ -220,34 +220,21 @@
 
 
 
-
-height:50vh;
 ">
     
     <!-- 主页  -->
-    
-    
-    <!-- 文章页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Maple's Blog.
-            <!-- 文章页  -->
-            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
-            
-            
-                When the light smoke of youth curls away the juvenile's joy, we can get everything worth absorbing.
-            
-            <!-- 文章页  -->
             
         </p>
         <!-- 文章页meta -->
@@ -359,19 +346,19 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2019/04/10/leetcode-53/">
+        <a class="abstract-title" href="/2019/04/03/Leetcode-07/">
             
-                <span>Leetcode-53</span>
+                <span>Leetcode-07</span>
         </a>
         <div class="abstract-content">
-            maxSubArray-链接
+            Digital inversion-链接
 实现的代码如下：
-12345678910111213141516class Solution &#123;public:    int maxSubArray(vector&lt;int&gt;&amp; nums) &#123;             int sum=0;        int ans=nums[0];        for(int i=0;i&lt;nums.size();i++)        &#123;            sum+=nums[i];            ans=max(ans,sum);           ...
+1234567891011121314151617181920class Solution &#123;public:    int reverse(int x) &#123;       if(x==0)            return 0;        long long  sum=0;  //如果这里是int类型就会爆数据                          //因为反过来后的数可能会溢出        while(x!=0)        &#123;            sum=sum*10+(x...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/10</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/03</span>
             </div>
             <!-- tags  -->
             
@@ -390,272 +377,19 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2019/04/10/leetcode-38/">
+        <a class="abstract-title" href="/2019/02/27/Leetcode-70/">
             
-                <span>Leetcode-38</span>
+                <span>Leetcode-70</span>
         </a>
         <div class="abstract-content">
-            countAndSay-链接
+            这是一个简单的DP，类似于斐波那契数列。附上题目链接
 实现的代码如下：
-12345678910111213141516171819202122232425class Solution &#123;public:    string countAndSay(int n) &#123;        vector&lt;string&gt;s(n+1,&quot;&quot;);        s[1]=&quot;1&quot;;        for(int i=2;i&lt;=n;i++)        &#123;            for(int j=0;s[i-1][j]!=&apos;\0&apo...
+1234567891011121314151617181920212223242526#include&lt;iostream&gt;#include&lt;vector&gt;using namespace std;vector &lt;int&gt;memo;class Solution &#123;public:    int climbStairs(int n) &#123;        vector&lt;int&gt; data(n + 1, -1);        data[0] = 1;      ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/10</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/09/leetcode-35/">
-            
-                <span>Leetcode-35</span>
-        </a>
-        <div class="abstract-content">
-            searchInsert-链接
-实现的代码如下：
-1234567891011121314151617181920212223242526272829class Solution &#123;public:    int searchInsert(vector&lt;int&gt;&amp; nums, int target) &#123;     for(int i=0;i&lt;nums.size();)        &#123;            //找到不小于目标数的元素位置            while(target&gt;nums[i])            &#1...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/09/leetcode-28/">
-            
-                <span>Leetcode-28</span>
-        </a>
-        <div class="abstract-content">
-            strStr-链接
-实现的代码如下：
-这是一道典型的字符串匹配题……直接用KMP算法然后就过了
-123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657class Solution &#123;public:    int strStr(string haystack, string needle) &#123;        //这里要考虑两种特殊的情况        if (needle.size() == 0)          ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/09/leetcode-58/">
-            
-                <span>Leetcode-58</span>
-        </a>
-        <div class="abstract-content">
-            lengthOfLastWord-链接
-实现的代码如下：
-12345678910111213141516171819202122232425class Solution &#123;public:    int lengthOfLastWord(string s) &#123;            int count=0;            //如果没有单词，那么返回0            if(s.size()==0)                return 0;            else            &#123;                    in...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/09/leetcode-26/">
-            
-                <span>Leetcode-26</span>
-        </a>
-        <div class="abstract-content">
-            removeDuplicates-链接
-实现的代码如下：
-12345678class Solution &#123;public:    int removeDuplicates(vector&lt;int&gt;&amp; nums) &#123;            vector&lt;int&gt;::iterator it=unique(nums.begin(),nums.end());            nums.erase(it,nums.end());            return nums.size();    &#125;&#125;;
-一道标准的vecto...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/09/leetcode-172/">
-            
-                <span>Leetcode-172</span>
-        </a>
-        <div class="abstract-content">
-            trailingZeroes-链接
-实现的代码如下：
-12345678910111213class Solution &#123;public:    int trailingZeroes(int n) &#123;                int num = n;        int ans = 0;        while(num!=0)&#123;            num = num/5;            ans += num;        &#125;        return  ans;    &#125;&#125;;
-这道题就是求2*5的个数,2个...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/09/leetcode-14/">
-            
-                <span>Leetcode-14</span>
-        </a>
-        <div class="abstract-content">
-            longestCommonPrefix-链接
-实现的代码如下：
-123456789101112131415161718192021class Solution &#123;public:    string longestCommonPrefix(vector&lt;string&gt;&amp; strs) &#123;                    string ans=&quot;&quot;;            if(strs.size()==0)                return ans;            char m;            for...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-202/">
-            
-                <span>Leetcode-202</span>
-        </a>
-        <div class="abstract-content">
-            isHappy-链接
-实现的代码如下：
-123456789101112131415161718class Solution &#123;public:    bool isHappy(int n) &#123;        int sum;        //如果是快乐数，循环8次以内就可以得出结果了        for(int i=0;i&lt;8;i++)&#123;            sum=0;            while(n) &#123;                sum += (n % 10) * (n % 10);                n /=...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-171/">
-            
-                <span>Leetcode-171</span>
-        </a>
-        <div class="abstract-content">
-            titleToNumber-链接
-实现的代码如下：
-1234567891011class Solution &#123;public:    int titleToNumber(string s) &#123;        int sum=0;        for(int i=0;i&lt;s.size();i++)        &#123;            sum=sum*26+(s[i]-&apos;A&apos;+1);        &#125;        return sum;    &#125;&#125;;
-一道水题……
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/27</span>
             </div>
             <!-- tags  -->
             
@@ -671,119 +405,11 @@ height:50vh;
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">NEXT &#62;</a>
+        <a class="extend prev" rel="prev" href="/tags/Leetcode/page/2/">&#60; PREV</a><a class="page-number" href="/tags/Leetcode/">1</a><a class="page-number" href="/tags/Leetcode/page/2/">2</a><span class="page-number current">3</span>
     </nav>
     
 </main>
             <!-- profile -->
-            
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src="/avatar/Misaka.jpg">
-    <div class="profile-name">Maple_leaves</div>
-    
-    <div class="profile-signature">
-        Take me with me
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
-            
-                <span class="iconfont-archer wechat" title="wechat">
-                  
-                  <img class="profile-qr" src="/assets/example_qr.png">
-                </span>
-            
-        
-    
-        
-            
-                <a href="//github.com/MappleTT" class="iconfont-archer github" target="_blank" title="github"></a>
-            
-        
-    
-        
-            
-                <span class="iconfont-archer qq" title="qq">
-                  
-                  <img class="profile-qr" src="/assets/example_qq.png">
-                </span>
-            
-        
-    
-        
-            
-                <a href="mailto:1653516704@qq.com" class="iconfont-archer email" title="email"></a>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href="//www.baidu.com" target="_black">friendA</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href="//www.google.com" target="_black">friendB</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href="https://joewt.com/" target="_black">Joe哥</a>
-                    </span>
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href="/about">ABOUT ME</a>
-        </div>
-    
-</div>
             
         </div>
         <footer class="footer footer-unloaded">

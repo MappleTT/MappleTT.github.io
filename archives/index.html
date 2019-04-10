@@ -346,6 +346,68 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href="/2019/04/10/leetcode-53/">
+            
+                <span>Leetcode-53</span>
+        </a>
+        <div class="abstract-content">
+            maxSubArray-链接
+实现的代码如下：
+12345678910111213141516class Solution &#123;public:    int maxSubArray(vector&lt;int&gt;&amp; nums) &#123;             int sum=0;        int ans=nums[0];        for(int i=0;i&lt;nums.size();i++)        &#123;            sum+=nums[i];            ans=max(ans,sum);           ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/10</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/04/10/leetcode-38/">
+            
+                <span>Leetcode-38</span>
+        </a>
+        <div class="abstract-content">
+            countAndSay-链接
+实现的代码如下：
+12345678910111213141516171819202122232425class Solution &#123;public:    string countAndSay(int n) &#123;        vector&lt;string&gt;s(n+1,&quot;&quot;);        s[1]=&quot;1&quot;;        for(int i=2;i&lt;=n;i++)        &#123;            for(int j=0;s[i-1][j]!=&apos;\0&apo...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/10</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href="/2019/04/09/leetcode-35/">
             
                 <span>Leetcode-35</span>
@@ -576,69 +638,6 @@
 1234567891011class Solution &#123;public:    int titleToNumber(string s) &#123;        int sum=0;        for(int i=0;i&lt;s.size();i++)        &#123;            sum=sum*26+(s[i]-&apos;A&apos;+1);        &#125;        return sum;    &#125;&#125;;
 一道水题……
 
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-13/">
-            
-                <span>Leetcode-13</span>
-        </a>
-        <div class="abstract-content">
-            romanToInt-链接
-实现的代码如下：
-这道题不难，就是字多了点给人的感觉好像很难，其实就是你自己多用几个if  else  然后将它给的特殊情况涵盖进去就可以了
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455class Solution &#123;public:    int romanToInt(string s) &#123;        int sum=0;          int m=s.size();     ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-20/">
-            
-                <span>Leetcode-20</span>
-        </a>
-        <div class="abstract-content">
-            isValid-链接
-实现的代码如下：
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455class Solution &#123;public:    bool isValid(string s) &#123;        stack&lt;char&gt; arr;        for (int i = 0; i &lt; s.size(); i++) &#123;            char m;            //...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -1056,9 +1055,53 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 23
+        Total : 25
         </div>
         <!-- search  -->
         
@@ -1074,7 +1117,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-28/">Leetcode-28</a>
+            <span class="archive-post-date">04/10</span><a class="archive-post-title" href="/2019/04/10/leetcode-53/">Leetcode-53</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/10</span><a class="archive-post-title" href="/2019/04/10/leetcode-38/">Leetcode-38</a>
         </li>
     
     
@@ -1084,17 +1132,22 @@
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-28/">Leetcode-28</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-58/">Leetcode-58</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-172/">Leetcode-172</a>
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-26/">Leetcode-26</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-26/">Leetcode-26</a>
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-172/">Leetcode-172</a>
         </li>
     
     
@@ -1109,12 +1162,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-171/">Leetcode-171</a>
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-13/">Leetcode-13</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-13/">Leetcode-13</a>
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-171/">Leetcode-171</a>
         </li>
     
     
@@ -1154,12 +1207,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/04</span><a class="archive-post-title" href="/2019/04/04/Leetcode-09/">Leetcode-09</a>
+            <span class="archive-post-date">04/04</span><a class="archive-post-title" href="/2019/04/04/Leetcode-01/">Leetcode-01</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/04</span><a class="archive-post-title" href="/2019/04/04/Leetcode-01/">Leetcode-01</a>
+            <span class="archive-post-date">04/04</span><a class="archive-post-title" href="/2019/04/04/Leetcode-09/">Leetcode-09</a>
         </li>
     
     
