@@ -346,6 +346,37 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href="/2019/04/12/leetcode-136/">
+            
+                <span>Leetcode-136</span>
+        </a>
+        <div class="abstract-content">
+            singleNumber-链接
+实现的代码如下：
+12345678910111213class Solution &#123;public:    int singleNumber(vector&lt;int&gt;&amp; nums) &#123;         sort(nums.begin(),nums.end());           int i;           for(i=0;i&lt;nums.size()-1;i+=2)           &#123;               if(nums[i]!=nums[i+1])                  ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/12</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href="/2019/04/11/Leetcode-21/">
             
                 <span>Leetcode-21</span>
@@ -610,37 +641,6 @@
             <!-- date  -->
             <div class="abstract-date">
                 <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-202/">
-            
-                <span>Leetcode-202</span>
-        </a>
-        <div class="abstract-content">
-            isHappy-链接
-实现的代码如下：
-123456789101112131415161718class Solution &#123;public:    bool isHappy(int n) &#123;        int sum;        //如果是快乐数，循环8次以内就可以得出结果了        for(int i=0;i&lt;8;i++)&#123;            sum=0;            while(n) &#123;                sum += (n % 10) * (n % 10);                n /=...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
             </div>
             <!-- tags  -->
             
@@ -1110,9 +1110,38 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 26
+        Total : 27
         </div>
         <!-- search  -->
         
@@ -1125,6 +1154,11 @@
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/12</span><a class="archive-post-title" href="/2019/04/12/leetcode-136/">Leetcode-136</a>
+        </li>
     
     
         <li class="archive-post-item">

@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Leetcode-50 · Maple&#39;s Blog</title>
+    <title>Leetcode-136 · Maple&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">Maple&#39;s Blog.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Leetcode-50</a>
+                <a href="#" class="post-name">Leetcode-136</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Leetcode-50
+            Leetcode-136
             <!-- 404 -->
             
         </h1>
@@ -272,12 +272,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">593</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">58</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/04/08</span>
+                    <span class="post-intro-time">2019/04/12</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -401,29 +401,19 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p><a href="https://leetcode-cn.com/problems/powx-n/" target="_blank" rel="noopener">myPow-链接</a></p>
-<p>如果按照以下的这个代码提交的话还有3个样例过不了(一共304个样例)，这里面有个坑….下面我就来说说这个坑</p>
-<p>起初一眼看过去，嗯！快速幂，没错，就是的，只是这个题的数据有点卡，题目如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">实现 pow(x, n) ，即计算 x 的 n 次幂函数。</span><br><span class="line"></span><br><span class="line">示例 1:</span><br><span class="line"></span><br><span class="line">输入: 2.00000, 10</span><br><span class="line">输出: 1024.00000</span><br><span class="line">示例 2:</span><br><span class="line"></span><br><span class="line">输入: 2.10000, 3</span><br><span class="line">输出: 9.26100</span><br><span class="line">示例 3:</span><br><span class="line"></span><br><span class="line">输入: 2.00000, -2</span><br><span class="line">输出: 0.25000</span><br><span class="line">解释: 2-2 = 1/22 = 1/4 = 0.25</span><br><span class="line">说明:</span><br><span class="line"></span><br><span class="line">-100.0 &lt; x &lt; 100.0</span><br><span class="line">n 是 32 位有符号整数，其数值范围是 [−231, 231 − 1] 。</span><br></pre></td></tr></table></figure>
-<p>他这里的n的范围是在：</p>
-<p>   INT_MIN&lt;=n&lt;=INT_MAX;</p>
-<p>   而….(真实情况是这样de)</p>
-<p>   INT_MIN=-2147483648</p>
-<p>   INT_MAX=2147483647</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    double myPow(double x, int n) &#123;</span><br><span class="line">           double  ans=1;</span><br><span class="line">           double  base=x;</span><br><span class="line">           //给定一个标记，m=1代表n&gt;0;</span><br><span class="line">           int m=1;    </span><br><span class="line">           //1的任何次方都是1；</span><br><span class="line">           if(x==1)</span><br><span class="line">           &#123;</span><br><span class="line">               return x;</span><br><span class="line">           &#125;</span><br><span class="line">           //-1的偶数此方是1，奇数次方是-1；</span><br><span class="line">           if(x==-1)</span><br><span class="line">           &#123;</span><br><span class="line">                  if(n%2==0)</span><br><span class="line">                       return 1;</span><br><span class="line">                  else</span><br><span class="line">                       return -1; </span><br><span class="line">           &#125;</span><br><span class="line">           //如果n==0,则0次方为1；</span><br><span class="line">           if(n==0)</span><br><span class="line">                return 1;</span><br><span class="line">            //如果n是个负数，则答案就要变成1/ans;    </span><br><span class="line">           if(n&lt;0)</span><br><span class="line">           &#123;</span><br><span class="line">               m=0;    //n&lt;0,标记m=0;</span><br><span class="line">               n*=-1;  //让n变成正数进行计算，但是，这里如果n=INT_MIN,一旦n=n*(-1)的时候，就会造成溢出，因为-INT_MIN在int的情况下是会溢出的....,所以这里就要用到将n转化为long long  的数据类型来存储了</span><br><span class="line">           &#125;</span><br><span class="line">           //好了，到了这里就是一个快速幂的板子了......</span><br><span class="line">           while(n)</span><br><span class="line">           &#123;</span><br><span class="line">               if(n&amp;1)</span><br><span class="line">                   ans*=base;</span><br><span class="line">               base*=base;</span><br><span class="line">               n&gt;&gt;=1;</span><br><span class="line">           &#125;</span><br><span class="line">           if(m==0)</span><br><span class="line">               ans=1/ans;</span><br><span class="line">         return ans;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>AC的代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    double myPow(double x, int n) &#123;</span><br><span class="line">           long long f=n;     //将n转化为long long 类型，之后只需将n改为f就可以了</span><br><span class="line">           double  ans=1;</span><br><span class="line">           double  base=x;</span><br><span class="line">           int m=1;</span><br><span class="line">           if(x==1)</span><br><span class="line">           &#123;</span><br><span class="line">               return 1;</span><br><span class="line">           &#125;</span><br><span class="line">           if(x==-1)</span><br><span class="line">           &#123;</span><br><span class="line">               if(f%2==0)</span><br><span class="line">                   return 1;</span><br><span class="line">               else</span><br><span class="line">                   return -1;</span><br><span class="line">           &#125;</span><br><span class="line">           if(f==0)</span><br><span class="line">               return 1;</span><br><span class="line">           if(f&lt;0)</span><br><span class="line">           &#123;</span><br><span class="line">               m=0;</span><br><span class="line">               f*=-1;</span><br><span class="line">           &#125;</span><br><span class="line">           while(f)</span><br><span class="line">           &#123;</span><br><span class="line">               if(f&amp;1)</span><br><span class="line">                   ans*=base;</span><br><span class="line">               base*=base;</span><br><span class="line">               f&gt;&gt;=1;</span><br><span class="line">           &#125;</span><br><span class="line">           if(m==0)</span><br><span class="line">               ans=1/ans;</span><br><span class="line">         return ans;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>这道题我觉得就是考察细节问题……在看2019年ICPC直播的时候听杜老师说了一句：多刷题，刷好题，刷难题。</p>
-<p>相信总有一天你会成功de，😄嘻嘻      </p>
+        <p><a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">singleNumber-链接</a></p>
+<p>实现的代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int singleNumber(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">         sort(nums.begin(),nums.end());</span><br><span class="line">           int i;</span><br><span class="line">           for(i=0;i&lt;nums.size()-1;i+=2)</span><br><span class="line">           &#123;</span><br><span class="line">               if(nums[i]!=nums[i+1])</span><br><span class="line">                   break;</span><br><span class="line">           &#125;</span><br><span class="line">               return nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>一道水题……</p>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://yoursite.com">Maple</a>
-            </p><p>原文链接：<a href="http://yoursite.com/2019/04/08/leetcode-50/">http://yoursite.com/2019/04/08/leetcode-50/</a>
-            </p><p>发表日期：<a href="http://yoursite.com/2019/04/08/leetcode-50/">April 8th 2019, 3:35:51 pm</a>
-            </p><p>更新日期：<a href="http://yoursite.com/2019/04/08/leetcode-50/">April 8th 2019, 7:28:48 pm</a>
+            </p><p>原文链接：<a href="http://yoursite.com/2019/04/12/leetcode-136/">http://yoursite.com/2019/04/12/leetcode-136/</a>
+            </p><p>发表日期：<a href="http://yoursite.com/2019/04/12/leetcode-136/">April 12th 2019, 9:01:58 pm</a>
+            </p><p>更新日期：<a href="http://yoursite.com/2019/04/12/leetcode-136/">April 12th 2019, 9:02:00 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -431,17 +421,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2019/04/08/leetcode-20/" title="Leetcode-20">
-                    <div class="nextTitle">Leetcode-20</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2019/04/08/leetcode-27/" title="Leetcode-27">
-                    <div class="prevTitle">Leetcode-27</div>
+                <a href="/2019/04/11/Leetcode-21/" title="Leetcode-21">
+                    <div class="prevTitle">Leetcode-21</div>
                 </a>
             
         </li>

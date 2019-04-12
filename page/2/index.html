@@ -359,6 +359,37 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href="/2019/04/08/leetcode-202/">
+            
+                <span>Leetcode-202</span>
+        </a>
+        <div class="abstract-content">
+            isHappy-链接
+实现的代码如下：
+123456789101112131415161718class Solution &#123;public:    bool isHappy(int n) &#123;        int sum;        //如果是快乐数，循环8次以内就可以得出结果了        for(int i=0;i&lt;8;i++)&#123;            sum=0;            while(n) &#123;                sum += (n % 10) * (n % 10);                n /=...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href="/2019/04/08/leetcode-171/">
             
                 <span>Leetcode-171</span>
@@ -623,37 +654,6 @@ height:50vh;
             conutPrimes-链接
 实现的代码如下：
 1234567891011121314151617181920212223class Solution &#123;public:    int countPrimes(int n) &#123;         int count=0;         for(int i=2;i&lt;n;i++)  //题目给的是小于n；         &#123;             int x=1;  //给出一个标记             for(int j=2;j*j&lt;=i;j++)             &#123;     ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/04</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/04/Leetcode-09/">
-            
-                <span>Leetcode-09</span>
-        </a>
-        <div class="abstract-content">
-            bool isPalindrome-链接
-实现的代码如下：
-123456789101112131415161718class Solution &#123;public:    bool isPalindrome(int x) &#123;        long long  ans=0,sign,x1=x;//定义long long类型以防溢出          sign=(x&lt;0)? -1:1;          while(x)          &#123;              ans=ans*10+x%10;              x/=10;         ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -1236,9 +1236,38 @@ height:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 26
+        Total : 27
         </div>
         <!-- search  -->
         
@@ -1251,6 +1280,11 @@ height:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/12</span><a class="archive-post-title" href="/2019/04/12/leetcode-136/">Leetcode-136</a>
+        </li>
     
     
         <li class="archive-post-item">
