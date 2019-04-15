@@ -346,26 +346,35 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2019/04/09/leetcode-28/">
+        <a class="abstract-title" href="/2019/02/14/P3367 【模板】并查集/">
             
-                <span>Leetcode-28</span>
+                <span>P3367 【模板】并查集</span>
         </a>
         <div class="abstract-content">
-            strStr-链接
-实现的代码如下：
-这是一道典型的字符串匹配题……直接用KMP算法然后就过了
-123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657class Solution &#123;public:    int strStr(string haystack, string needle) &#123;        //这里要考虑两种特殊的情况        if (needle.size() == 0)          ...
+            说明一下：因为这是自己第一次在博客上写题解，自己刚好又做了一个模板题，所以就Git上来了…..(^__^) xixi
+题目描述如题，现在有一个并查集，你需要完成合并和查询操作。
+输入输出格式
+输入格式：1、第一行包含两个整数N、M，表示共有N个元素和M个操作。
+2、接下来M行，每行包含三个整数Zi、Xi、Yi
+3、当Zi=1时，将Xi与Yi所在的集合合并
+4、当Zi=2时，输出Xi与Yi是否在同一集合内，是的话输出Y；否则话输出N
+输出格式：如上，对于每一个Zi=2的操作，都有一行输出，每行包含一个大写字母，为Y或者N
+输入输出样例
+输入样例#1:
+123456784 72 1 21 1...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/14</span>
             </div>
             <!-- tags  -->
             
             <div class="abstract-tags">
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="C++">C++</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="洛谷">洛谷</a>
     
 </div>
             
@@ -378,281 +387,20 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2019/04/09/leetcode-58/">
+        <a class="abstract-title" href="/2019/02/12/hello-world/">
             
-                <span>Leetcode-58</span>
+                <span>Hello Maple</span>
         </a>
         <div class="abstract-content">
-            lengthOfLastWord-链接
-实现的代码如下：
-12345678910111213141516171819202122232425class Solution &#123;public:    int lengthOfLastWord(string s) &#123;            int count=0;            //如果没有单词，那么返回0            if(s.size()==0)                return 0;            else            &#123;                    in...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/09/leetcode-26/">
-            
-                <span>Leetcode-26</span>
-        </a>
-        <div class="abstract-content">
-            removeDuplicates-链接
-实现的代码如下：
-12345678class Solution &#123;public:    int removeDuplicates(vector&lt;int&gt;&amp; nums) &#123;            vector&lt;int&gt;::iterator it=unique(nums.begin(),nums.end());            nums.erase(it,nums.end());            return nums.size();    &#125;&#125;;
-一道标准的vecto...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/09/leetcode-172/">
-            
-                <span>Leetcode-172</span>
-        </a>
-        <div class="abstract-content">
-            trailingZeroes-链接
-实现的代码如下：
-12345678910111213class Solution &#123;public:    int trailingZeroes(int n) &#123;                int num = n;        int ans = 0;        while(num!=0)&#123;            num = num/5;            ans += num;        &#125;        return  ans;    &#125;&#125;;
-这道题就是求2*5的个数,2个...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/09/leetcode-14/">
-            
-                <span>Leetcode-14</span>
-        </a>
-        <div class="abstract-content">
-            longestCommonPrefix-链接
-实现的代码如下：
-123456789101112131415161718192021class Solution &#123;public:    string longestCommonPrefix(vector&lt;string&gt;&amp; strs) &#123;                    string ans=&quot;&quot;;            if(strs.size()==0)                return ans;            char m;            for...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-202/">
-            
-                <span>Leetcode-202</span>
-        </a>
-        <div class="abstract-content">
-            isHappy-链接
-实现的代码如下：
-123456789101112131415161718class Solution &#123;public:    bool isHappy(int n) &#123;        int sum;        //如果是快乐数，循环8次以内就可以得出结果了        for(int i=0;i&lt;8;i++)&#123;            sum=0;            while(n) &#123;                sum += (n % 10) * (n % 10);                n /=...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-171/">
-            
-                <span>Leetcode-171</span>
-        </a>
-        <div class="abstract-content">
-            titleToNumber-链接
-实现的代码如下：
-1234567891011class Solution &#123;public:    int titleToNumber(string s) &#123;        int sum=0;        for(int i=0;i&lt;s.size();i++)        &#123;            sum=sum*26+(s[i]-&apos;A&apos;+1);        &#125;        return sum;    &#125;&#125;;
-一道水题……
+            Welcome to Hexo! My name is Maple.This is my very first post. 
 
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/12</span>
             </div>
             <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-13/">
-            
-                <span>Leetcode-13</span>
-        </a>
-        <div class="abstract-content">
-            romanToInt-链接
-实现的代码如下：
-这道题不难，就是字多了点给人的感觉好像很难，其实就是你自己多用几个if  else  然后将它给的特殊情况涵盖进去就可以了
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455class Solution &#123;public:    int romanToInt(string s) &#123;        int sum=0;          int m=s.size();     ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-20/">
-            
-                <span>Leetcode-20</span>
-        </a>
-        <div class="abstract-content">
-            isValid-链接
-实现的代码如下：
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455class Solution &#123;public:    bool isValid(string s) &#123;        stack&lt;char&gt; arr;        for (int i = 0; i &lt; s.size(); i++) &#123;            char m;            //...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-50/">
-            
-                <span>Leetcode-50</span>
-        </a>
-        <div class="abstract-content">
-            myPow-链接
-如果按照以下的这个代码提交的话还有3个样例过不了(一共304个样例)，这里面有个坑….下面我就来说说这个坑
-起初一眼看过去，嗯！快速幂，没错，就是的，只是这个题的数据有点卡，题目如下：
-12345678910111213141516171819实现 pow(x, n) ，即计算 x 的 n 次幂函数。示例 1:输入: 2.00000, 10输出: 1024.00000示例 2:输入: 2.10000, 3输出: 9.26100示例 3:输入: 2.00000, -2输出: 0.25000解释: 2-2 = 1/22 = 1/4 = 0.25说明:-100.0 &lt; ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
             
         </div>
     </article>
@@ -660,7 +408,7 @@
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/2019/">&#60; PREV</a><a class="page-number" href="/archives/2019/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2019/page/3/">3</a><a class="page-number" href="/archives/2019/page/4/">4</a><a class="extend next" rel="next" href="/archives/2019/page/3/">NEXT &#62;</a>
+        <a class="extend prev" rel="prev" href="/archives/2019/page/3/">&#60; PREV</a><a class="page-number" href="/archives/2019/">1</a><a class="page-number" href="/archives/2019/page/2/">2</a><a class="page-number" href="/archives/2019/page/3/">3</a><span class="page-number current">4</span>
     </nav>
     
 </main>
