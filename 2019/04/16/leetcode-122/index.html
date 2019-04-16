@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Leetcode-07 · Maple&#39;s Blog</title>
+    <title>Leetcode-122 · Maple&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">Maple&#39;s Blog.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Leetcode-07</a>
+                <a href="#" class="post-name">Leetcode-122</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Leetcode-07
+            Leetcode-122
             <!-- 404 -->
             
         </h1>
@@ -272,12 +272,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">105</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">211</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/04/03</span>
+                    <span class="post-intro-time">2019/04/16</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -401,19 +401,19 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p><a href="https://leetcode-cn.com/problems/reverse-integer/submissions/" target="_blank" rel="noopener">Digital inversion-链接</a></p>
+        <p><a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/" target="_blank" rel="noopener">maxProfi-链接</a></p>
 <p>实现的代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int reverse(int x) &#123;</span><br><span class="line"></span><br><span class="line">       if(x==0)</span><br><span class="line">            return 0;</span><br><span class="line">        long long  sum=0;  //如果这里是int类型就会爆数据</span><br><span class="line">                          //因为反过来后的数可能会溢出</span><br><span class="line">        while(x!=0)</span><br><span class="line">        &#123;</span><br><span class="line">            sum=sum*10+(x%10);</span><br><span class="line">            x/=10;</span><br><span class="line">        &#125;</span><br><span class="line">        if(sum&gt;INT_MAX||sum&lt;INT_MIN)</span><br><span class="line">            return 0;</span><br><span class="line">        else</span><br><span class="line">            return sum;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>这是一道比较水的题，主要是看清题目中给的注意的地方</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxProfit(vector&lt;int&gt;&amp; prices) &#123;</span><br><span class="line">        int sum=0;</span><br><span class="line">           for(int i=0;i&lt;prices.size();i++)</span><br><span class="line">           &#123;</span><br><span class="line">               if(i+1&lt;prices.size()&amp;&amp;prices[i+1]&gt;prices[i])</span><br><span class="line">                   sum+=(prices[i+1]-prices[i]);</span><br><span class="line">           &#125;</span><br><span class="line">           return sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>只要今天的价格大于昨天的价格就卖出去，比如第二天的价格是1，第三天的价格是5，也就意味着prices[1]&lt;prices[2]，我们只需要prices[2]-prices[1]就可以了，我们卖出去之后可以在当天购买，所以就算prices[3]=3改为8(比5大的数)我们仍然可以将prices[3]-prices[2]卖出，获得利润，如果prices[3]比5小，我们直接跳过prices[2]，然后继续比较prices[3]和pirces[4];<br>最后将所有的利润都加起来就是我们需要的answer</p>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://yoursite.com">Maple</a>
-            </p><p>原文链接：<a href="http://yoursite.com/2019/04/03/Leetcode-07/">http://yoursite.com/2019/04/03/Leetcode-07/</a>
-            </p><p>发表日期：<a href="http://yoursite.com/2019/04/03/Leetcode-07/">April 3rd 2019, 12:44:04 am</a>
-            </p><p>更新日期：<a href="http://yoursite.com/2019/04/03/Leetcode-07/">April 4th 2019, 8:37:44 am</a>
+            </p><p>原文链接：<a href="http://yoursite.com/2019/04/16/leetcode-122/">http://yoursite.com/2019/04/16/leetcode-122/</a>
+            </p><p>发表日期：<a href="http://yoursite.com/2019/04/16/leetcode-122/">April 16th 2019, 3:52:03 pm</a>
+            </p><p>更新日期：<a href="http://yoursite.com/2019/04/16/leetcode-122/">April 16th 2019, 3:52:03 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -422,16 +422,16 @@ height:50vh;
         <li class="next">
             
                 <div class="nextSlogan">Next Post</div>
-                <a href="/2019/04/04/Leetcode-01/" title="Leetcode-01">
-                    <div class="nextTitle">Leetcode-01</div>
+                <a href="/2019/04/16/leetcode-198/" title="Leetcode-198">
+                    <div class="nextTitle">Leetcode-198</div>
                 </a>
             
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2019/02/27/Leetcode-70/" title="Leetcode-70">
-                    <div class="prevTitle">Leetcode-70</div>
+                <a href="/2019/04/15/leetcode-121/" title="Leetcode-121">
+                    <div class="prevTitle">Leetcode-121</div>
                 </a>
             
         </li>
