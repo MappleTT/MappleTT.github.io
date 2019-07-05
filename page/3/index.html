@@ -359,6 +359,100 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href="/2019/04/09/leetcode-172/">
+            
+                <span>Leetcode-172</span>
+        </a>
+        <div class="abstract-content">
+            trailingZeroes-链接
+实现的代码如下：
+12345678910111213class Solution &#123;public:    int trailingZeroes(int n) &#123;                int num = n;        int ans = 0;        while(num!=0)&#123;            num = num/5;            ans += num;        &#125;        return  ans;    &#125;&#125;;
+这道题就是求2*5的个数,2个...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/04/09/leetcode-14/">
+            
+                <span>Leetcode-14</span>
+        </a>
+        <div class="abstract-content">
+            longestCommonPrefix-链接
+实现的代码如下：
+123456789101112131415161718192021class Solution &#123;public:    string longestCommonPrefix(vector&lt;string&gt;&amp; strs) &#123;                    string ans=&quot;&quot;;            if(strs.size()==0)                return ans;            char m;            for...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/04/08/leetcode-202/">
+            
+                <span>Leetcode-202</span>
+        </a>
+        <div class="abstract-content">
+            isHappy-链接
+实现的代码如下：
+123456789101112131415161718class Solution &#123;public:    bool isHappy(int n) &#123;        int sum;        //如果是快乐数，循环8次以内就可以得出结果了        for(int i=0;i&lt;8;i++)&#123;            sum=0;            while(n) &#123;                sum += (n % 10) * (n % 10);                n /=...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href="/2019/04/08/leetcode-171/">
             
                 <span>Leetcode-171</span>
@@ -566,99 +660,6 @@ height:50vh;
             <!-- date  -->
             <div class="abstract-date">
                 <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/07/Leetcode-66/">
-            
-                <span>Leetcode-66</span>
-        </a>
-        <div class="abstract-content">
-            plusone-链接
-实现的代码如下：
-1234567891011121314151617181920212223242526272829class Solution &#123;public:    vector&lt;int&gt; plusOne(vector&lt;int&gt;&amp; digits) &#123;        int k=digits.size()-1;        digits[k]+=1;           int m=0;        while(digits[k]&gt;9)  //每次加一后看它会不会进位，如果进位就继续循环        ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/04/Leetcode-204/">
-            
-                <span>Leetcode-204</span>
-        </a>
-        <div class="abstract-content">
-            conutPrimes-链接
-实现的代码如下：
-1234567891011121314151617181920212223class Solution &#123;public:    int countPrimes(int n) &#123;         int count=0;         for(int i=2;i&lt;n;i++)  //题目给的是小于n；         &#123;             int x=1;  //给出一个标记             for(int j=2;j*j&lt;=i;j++)             &#123;     ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/04</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/04/Leetcode-09/">
-            
-                <span>Leetcode-09</span>
-        </a>
-        <div class="abstract-content">
-            bool isPalindrome-链接
-实现的代码如下：
-123456789101112131415161718class Solution &#123;public:    bool isPalindrome(int x) &#123;        long long  ans=0,sign,x1=x;//定义long long类型以防溢出          sign=(x&lt;0)? -1:1;          while(x)          &#123;              ans=ans*10+x%10;              x/=10;         ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/04</span>
             </div>
             <!-- tags  -->
             
@@ -1426,9 +1427,58 @@ height:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 36
+        Total : 39
         </div>
         <!-- search  -->
         
@@ -1441,6 +1491,21 @@ height:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/05</span><a class="archive-post-title" href="/2019/07/05/LeetCode-20(自己写的类)/">Leetcode-20(自己写的类)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/05</span><a class="archive-post-title" href="/2019/07/05/栈/">栈</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/05</span><a class="archive-post-title" href="/2019/07/05/动态数组/">动态数组</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -1509,12 +1574,12 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-28/">Leetcode-28</a>
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-35/">Leetcode-35</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-35/">Leetcode-35</a>
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-28/">Leetcode-28</a>
         </li>
     
     
@@ -1524,12 +1589,12 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-172/">Leetcode-172</a>
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-26/">Leetcode-26</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-26/">Leetcode-26</a>
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-172/">Leetcode-172</a>
         </li>
     
     
@@ -1569,12 +1634,12 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/07</span><a class="archive-post-title" href="/2019/04/07/leetcode-169/">Leetcode-169</a>
+            <span class="archive-post-date">04/07</span><a class="archive-post-title" href="/2019/04/07/leetcode-69/">Leetcode-69</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/07</span><a class="archive-post-title" href="/2019/04/07/leetcode-69/">Leetcode-69</a>
+            <span class="archive-post-date">04/07</span><a class="archive-post-title" href="/2019/04/07/leetcode-169/">Leetcode-169</a>
         </li>
     
     

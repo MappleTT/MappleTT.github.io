@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Maple&#39;s Blog</title>
+    <title>动态数组 · Maple&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">Maple&#39;s Blog.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">动态数组</a>
+            </div>
+    </div>
     
     <a class="home-link" href="/">Maple's Blog.</a>
 </header>
@@ -220,24 +231,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            动态数组
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class="post-intro-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="算法与数据结构">算法与数据结构</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">553</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/07/05</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,322 +399,54 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/07/05/LeetCode-20(自己写的类)/">
-            
-                <span>Leetcode-20(自己写的类)</span>
-        </a>
-        <div class="abstract-content">
-            isValid-链接
-实现的代码如下：
-1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798991001011021031041051061071081091101111121131141151161171181191201211221231241251261271281...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/05</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br></pre></td><td class="code"><pre><span class="line">//栈中的ArraY头文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;cmath&gt;</span><br><span class="line">#include&lt;cstdlib&gt;</span><br><span class="line">#include&lt;cstring&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">template&lt;typename T&gt;</span><br><span class="line">class Array&#123;</span><br><span class="line">private:</span><br><span class="line">    T *data;         //数组名</span><br><span class="line">    int size;         //数组中元素的个数</span><br><span class="line">    int Capacity;    //数组容量</span><br><span class="line">public:</span><br><span class="line">    Array(int Capacity)&#123;</span><br><span class="line">        data=new T [Capacity];</span><br><span class="line">        this-&gt;size=0;</span><br><span class="line">        this-&gt;Capacity=Capacity;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Array()&#123;</span><br><span class="line">        data=new T [100];</span><br><span class="line">        this-&gt;size=0;</span><br><span class="line">        this-&gt;Capacity=100;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //获得数组的元素个数</span><br><span class="line">    int  getSize()&#123;</span><br><span class="line">        return size;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //判断数组是否为空</span><br><span class="line">    bool isEmpty()&#123;</span><br><span class="line">        return size==0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //获得数组的容量</span><br><span class="line">    int getArray()&#123;</span><br><span class="line">        return Capacity;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //在数组中插入一个元素</span><br><span class="line">    void add(int index,T elem)&#123;</span><br><span class="line">        if(index&lt;0||index&gt;Capacity)&#123;</span><br><span class="line">            cout&lt;&lt;&quot;插入的位置有误&quot;&lt;&lt;endl;</span><br><span class="line">            return ;</span><br><span class="line">        &#125;</span><br><span class="line">        if(size&gt;=Capacity)&#123;</span><br><span class="line">            resize(Capacity*2);</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i=size-1;i&gt;=index;i--)&#123;</span><br><span class="line">            data[i+1]=data[i];</span><br><span class="line">        &#125;</span><br><span class="line">        data[index]=elem;</span><br><span class="line">        size++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //在数组的最后一个位置添加一个新元素elem;</span><br><span class="line">    void addLast(T elem)&#123;</span><br><span class="line">        data[size]=elem;</span><br><span class="line">        size++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //获取index位置的数组元素</span><br><span class="line">    T get(int index)&#123;</span><br><span class="line">        if(index&lt;0||index&gt;=size)&#123;</span><br><span class="line">            cout&lt;&lt;&quot;您输入的位置有误&quot;;</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line">        return data[index];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //在index位置处修改数组元素的值</span><br><span class="line">    void set(int index,T elem)&#123;</span><br><span class="line">        if(index&lt;0||index&gt;=size)&#123;</span><br><span class="line">            cout&lt;&lt;&quot;您输入的位置有误&quot;;</span><br><span class="line">            return ;</span><br><span class="line">        &#125;</span><br><span class="line">        data[index]=elem;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    //查找数组中是否有元素e</span><br><span class="line">    bool contains(T e)&#123;</span><br><span class="line">        for(int i=0;i&lt;size;i++)&#123;</span><br><span class="line">            if(data[i]==e)</span><br><span class="line">                return true;</span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //查找数组中元素e的索引index</span><br><span class="line">    int find(T e)&#123;</span><br><span class="line">        for(int i=0;i&lt;size;i++)&#123;</span><br><span class="line">            if(data[i]==e)</span><br><span class="line">                return i;</span><br><span class="line">        &#125;</span><br><span class="line">        return -1;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //删除数组中索引为index位置的元素，并且返回被删除的元素的值</span><br><span class="line">    T remove(int index)&#123;</span><br><span class="line">        if(index&lt;0||index&gt;=size)&#123;</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line">        T ret=data[index];</span><br><span class="line">        for(int i=index+1;i&lt;size;i++)&#123;</span><br><span class="line">            data[i-1]=data[i];</span><br><span class="line">        &#125;</span><br><span class="line">        size--;</span><br><span class="line">        //缩容的时候防止复杂度的震荡</span><br><span class="line">        if(size&lt;Capacity/4&amp;&amp;Capacity/2!=0)</span><br><span class="line">            resize(Capacity/2);</span><br><span class="line">        return ret;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //改变数组的容量</span><br><span class="line">    void resize(int newCapacity)&#123;</span><br><span class="line">        T  *newdata=new T [newCapacity];</span><br><span class="line">        for(int i=0;i&lt;size;i++)&#123;</span><br><span class="line">            newdata[i]=data[i];</span><br><span class="line">        &#125;</span><br><span class="line">        data=newdata;</span><br><span class="line">        Capacity=newCapacity;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //打印数组元素</span><br><span class="line">    void PrintArray()&#123;</span><br><span class="line">        for(int i=0;i&lt;size;i++)</span><br><span class="line">            cout&lt;&lt;data[i]&lt;&lt;&quot; &quot;;</span><br><span class="line">        cout&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/07/05/栈/">
-            
-                <span>栈</span>
-        </a>
-        <div class="abstract-content">
-            基于ArraY此数组实现的——栈
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152#include&lt;iostream&gt;#include&lt;cmath&gt;#include&lt;cstdlib&gt;#include&lt;cstring&gt;#include&quot;ArraY.h&quot;using namespace std;template&lt;typename  T&gt;class ArrayStack&#12...
+        <div class="license-wrapper">
+            <p>原文作者：<a href="http://yoursite.com">Maple</a>
+            </p><p>原文链接：<a href="http://yoursite.com/2019/07/05/动态数组/">http://yoursite.com/2019/07/05/动态数组/</a>
+            </p><p>发表日期：<a href="http://yoursite.com/2019/07/05/动态数组/">July 5th 2019, 3:01:50 pm</a>
+            </p><p>更新日期：<a href="http://yoursite.com/2019/07/05/动态数组/">July 5th 2019, 11:41:13 pm</a>
+            </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/05</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="算法与数据结构">算法与数据结构</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/07/05/动态数组/">
-            
-                <span>动态数组</span>
-        </a>
-        <div class="abstract-content">
-            123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134//栈...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/05</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="算法与数据结构">算法与数据结构</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/06/20/leetcode-804/">
-            
-                <span>Leetcode-804</span>
-        </a>
-        <div class="abstract-content">
-            uniqueMorseRepresentations-链接
-实现的代码如下：
-1234567891011121314151617181920212223242526272829303132333435363738#include&lt;iostream&gt;#include&lt;set&gt;#include&lt;cstdlib&gt;#include&lt;vector&gt;#include&lt;cstring&gt;using namespace std;class Solution &#123;public:    int uniqueMorseRepresentatio...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/06/20</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/24/leetcode-213/">
-            
-                <span>Leetcode-213</span>
-        </a>
-        <div class="abstract-content">
-            rob-链接
-实现的代码如下：
-123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110#include&lt;iostream&gt;#include&lt;set&gt;#include&lt;vect...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/24</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/16/leetcode-198/">
-            
-                <span>Leetcode-198</span>
-        </a>
-        <div class="abstract-content">
-            House Robber-链接
-实现的代码如下：
-12345678910111213141516171819202122232425262728293031323334353637383940414243#include&lt;iostream&gt;#include&lt;vector&gt;#include&lt;cmath&gt;using namespace std;class Solution &#123;public:    int MAX(vector&lt;int&gt;&amp;arr,int n)    &#123;        int max=arr[0];   ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/16</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/16/leetcode-122/">
-            
-                <span>Leetcode-122</span>
-        </a>
-        <div class="abstract-content">
-            maxProfi-链接
-实现的代码如下：
-123456789101112class Solution &#123;public:    int maxProfit(vector&lt;int&gt;&amp; prices) &#123;        int sum=0;           for(int i=0;i&lt;prices.size();i++)           &#123;               if(i+1&lt;prices.size()&amp;&amp;prices[i+1]&gt;prices[i])                   sum+=...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/16</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/15/leetcode-121/">
-            
-                <span>Leetcode-121</span>
-        </a>
-        <div class="abstract-content">
-            maxProfit-链接
-实现的代码如下：
-12345678910111213141516171819202122232425262728#include&lt;iostream&gt;#include&lt;vector&gt;#include&lt;cmath&gt;using namespace std;class Solution &#123;public:    int maxProfit(vector&lt;int&gt;&amp; prices) &#123;        int ans=0;        for(int i=0;i&lt;prices.size();i...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/15</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/15/leetcode-88/">
-            
-                <span>Leetcode-88</span>
-        </a>
-        <div class="abstract-content">
-            merge-链接
-实现的代码如下：
-12345678910class Solution &#123;public:    void merge(vector&lt;int&gt;&amp; nums1, int m, vector&lt;int&gt;&amp; nums2, int n) &#123;      for(int i=0;i&lt;nums2.size();i++)           &#123;               nums1[m++]=nums2[i];           &#125;           sort(nums1.begin(),nums1....
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/15</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/15/leetcode-118/">
-            
-                <span>Leetcode-118</span>
-        </a>
-        <div class="abstract-content">
-            generate-链接
-实现的代码如下：
-杨辉三角I
-12345678910111213141516171819class Solution &#123;public:    vector&lt;vector&lt;int&gt;&gt; generate(int numRows) &#123;       vector&lt;vector&lt;int&gt;&gt;ans;       if(numRows&lt;=0)           return ans;       ans.push_back(&#123;1&#125;);       for(int i=1;i&lt;n...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/15</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href="/2019/07/05/栈/" title="栈">
+                    <div class="nextTitle">栈</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2019/06/20/leetcode-804/" title="Leetcode-804">
+                    <div class="prevTitle">Leetcode-804</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-    <nav class="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/archives/2019/page/2/">2</a><a class="page-number" href="/archives/2019/page/3/">3</a><a class="page-number" href="/archives/2019/page/4/">4</a><a class="extend next" rel="next" href="/archives/2019/page/2/">NEXT &#62;</a>
-    </nav>
     
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -752,6 +545,24 @@
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1633,6 +1444,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"superSample":2,"width":100,"height":160,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
