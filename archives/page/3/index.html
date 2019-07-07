@@ -346,6 +346,163 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href="/2019/04/10/leetcode-38/">
+            
+                <span>Leetcode-38</span>
+        </a>
+        <div class="abstract-content">
+            countAndSay-链接
+实现的代码如下：
+12345678910111213141516171819202122232425class Solution &#123;public:    string countAndSay(int n) &#123;        vector&lt;string&gt;s(n+1,&quot;&quot;);        s[1]=&quot;1&quot;;        for(int i=2;i&lt;=n;i++)        &#123;            for(int j=0;s[i-1][j]!=&apos;\0&apo...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/10</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/04/09/leetcode-35/">
+            
+                <span>Leetcode-35</span>
+        </a>
+        <div class="abstract-content">
+            searchInsert-链接
+实现的代码如下：
+1234567891011121314151617181920212223242526272829class Solution &#123;public:    int searchInsert(vector&lt;int&gt;&amp; nums, int target) &#123;     for(int i=0;i&lt;nums.size();)        &#123;            //找到不小于目标数的元素位置            while(target&gt;nums[i])            &#1...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/04/09/leetcode-28/">
+            
+                <span>Leetcode-28</span>
+        </a>
+        <div class="abstract-content">
+            strStr-链接
+实现的代码如下：
+这是一道典型的字符串匹配题……直接用KMP算法然后就过了
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657class Solution &#123;public:    int strStr(string haystack, string needle) &#123;        //这里要考虑两种特殊的情况        if (needle.size() == 0)          ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/04/09/leetcode-58/">
+            
+                <span>Leetcode-58</span>
+        </a>
+        <div class="abstract-content">
+            lengthOfLastWord-链接
+实现的代码如下：
+12345678910111213141516171819202122232425class Solution &#123;public:    int lengthOfLastWord(string s) &#123;            int count=0;            //如果没有单词，那么返回0            if(s.size()==0)                return 0;            else            &#123;                    in...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/04/09/leetcode-26/">
+            
+                <span>Leetcode-26</span>
+        </a>
+        <div class="abstract-content">
+            removeDuplicates-链接
+实现的代码如下：
+12345678class Solution &#123;public:    int removeDuplicates(vector&lt;int&gt;&amp; nums) &#123;            vector&lt;int&gt;::iterator it=unique(nums.begin(),nums.end());            nums.erase(it,nums.end());            return nums.size();    &#125;&#125;;
+一道标准的vecto...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href="/2019/04/09/leetcode-172/">
             
                 <span>Leetcode-172</span>
@@ -499,170 +656,10 @@
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-20/">
-            
-                <span>Leetcode-20</span>
-        </a>
-        <div class="abstract-content">
-            isValid-链接
-实现的代码如下：
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455class Solution &#123;public:    bool isValid(string s) &#123;        stack&lt;char&gt; arr;        for (int i = 0; i &lt; s.size(); i++) &#123;            char m;            //...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-50/">
-            
-                <span>Leetcode-50</span>
-        </a>
-        <div class="abstract-content">
-            myPow-链接
-如果按照以下的这个代码提交的话还有3个样例过不了(一共304个样例)，这里面有个坑….下面我就来说说这个坑
-起初一眼看过去，嗯！快速幂，没错，就是的，只是这个题的数据有点卡，题目如下：
-12345678910111213141516171819实现 pow(x, n) ，即计算 x 的 n 次幂函数。示例 1:输入: 2.00000, 10输出: 1024.00000示例 2:输入: 2.10000, 3输出: 9.26100示例 3:输入: 2.00000, -2输出: 0.25000解释: 2-2 = 1/22 = 1/4 = 0.25说明:-100.0 &lt; ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/08/leetcode-27/">
-            
-                <span>Leetcode-27</span>
-        </a>
-        <div class="abstract-content">
-            removeElement-链接
-实现的代码如下：
-123456789101112131415161718192021class Solution &#123;public:    int removeElement(vector&lt;int&gt;&amp; nums, int val) &#123;                sort(nums.begin(),nums.end());                      //用一个变量n来记录删除val后的长度是多少          int n=nums.size();          for(int i=0;i&l...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/07/leetcode-69/">
-            
-                <span>Leetcode-69</span>
-        </a>
-        <div class="abstract-content">
-            mySqrt-链接
-实现的代码如下：
-123456class Solution &#123;public:    int mySqrt(int x) &#123;         return sqrt(x);    &#125;&#125;;
-一道很水的题……
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/07/leetcode-169/">
-            
-                <span>Leetcode-169</span>
-        </a>
-        <div class="abstract-content">
-            majorityElement-链接
-实现的代码如下：
-1234567class Solution &#123;public:    int majorityElement(vector&lt;int&gt;&amp; nums) &#123;           sort(nums.begin(),nums.end());           return nums[nums.size()/2];    &#125;&#125;;
-这题如果暴力两遍循环的话只能过42个数据点，还有2个过不了，所以考虑用到sort排序的话就是O(nlogn)的时间复杂度了,然后就AC
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/page/2/">&#60; PREV</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/archives/page/4/">4</a><a class="extend next" rel="next" href="/archives/page/4/">NEXT &#62;</a>
+        <a class="extend prev" rel="prev" href="/archives/page/2/">&#60; PREV</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/archives/page/4/">4</a><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/4/">NEXT &#62;</a>
     </nav>
     
 </main>
@@ -1355,9 +1352,112 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 39
+        Total : 44
         </div>
         <!-- search  -->
         
@@ -1370,6 +1470,31 @@
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/07</span><a class="archive-post-title" href="/2019/07/07/链表队列/">链表队列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/06</span><a class="archive-post-title" href="/2019/07/06/链表栈/">链表栈</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/06</span><a class="archive-post-title" href="/2019/07/06/链表/">链表</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/06</span><a class="archive-post-title" href="/2019/07/06/循环队列/">循环队列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/06</span><a class="archive-post-title" href="/2019/07/06/数组队列/">数组队列</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -1453,12 +1578,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-35/">Leetcode-35</a>
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-28/">Leetcode-28</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-28/">Leetcode-28</a>
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-35/">Leetcode-35</a>
         </li>
     
     
@@ -1468,12 +1593,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-26/">Leetcode-26</a>
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-172/">Leetcode-172</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-172/">Leetcode-172</a>
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href="/2019/04/09/leetcode-26/">Leetcode-26</a>
         </li>
     
     
@@ -1488,12 +1613,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-13/">Leetcode-13</a>
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-171/">Leetcode-171</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-171/">Leetcode-171</a>
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-13/">Leetcode-13</a>
         </li>
     
     
@@ -1513,12 +1638,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/07</span><a class="archive-post-title" href="/2019/04/07/leetcode-69/">Leetcode-69</a>
+            <span class="archive-post-date">04/07</span><a class="archive-post-title" href="/2019/04/07/leetcode-169/">Leetcode-169</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/07</span><a class="archive-post-title" href="/2019/04/07/leetcode-169/">Leetcode-169</a>
+            <span class="archive-post-date">04/07</span><a class="archive-post-title" href="/2019/04/07/leetcode-69/">Leetcode-69</a>
         </li>
     
     
@@ -1533,12 +1658,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/04</span><a class="archive-post-title" href="/2019/04/04/Leetcode-01/">Leetcode-01</a>
+            <span class="archive-post-date">04/04</span><a class="archive-post-title" href="/2019/04/04/Leetcode-09/">Leetcode-09</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/04</span><a class="archive-post-title" href="/2019/04/04/Leetcode-09/">Leetcode-09</a>
+            <span class="archive-post-date">04/04</span><a class="archive-post-title" href="/2019/04/04/Leetcode-01/">Leetcode-01</a>
         </li>
     
     
