@@ -359,6 +359,133 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href="/2019/04/09/leetcode-14/">
+            
+                <span>Leetcode-14</span>
+        </a>
+        <div class="abstract-content">
+            longestCommonPrefix-链接
+实现的代码如下：
+123456789101112131415161718192021class Solution &#123;public:    string longestCommonPrefix(vector&lt;string&gt;&amp; strs) &#123;                    string ans=&quot;&quot;;            if(strs.size()==0)                return ans;            char m;            for...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/09</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/04/08/leetcode-202/">
+            
+                <span>Leetcode-202</span>
+        </a>
+        <div class="abstract-content">
+            isHappy-链接
+实现的代码如下：
+123456789101112131415161718class Solution &#123;public:    bool isHappy(int n) &#123;        int sum;        //如果是快乐数，循环8次以内就可以得出结果了        for(int i=0;i&lt;8;i++)&#123;            sum=0;            while(n) &#123;                sum += (n % 10) * (n % 10);                n /=...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/04/08/leetcode-171/">
+            
+                <span>Leetcode-171</span>
+        </a>
+        <div class="abstract-content">
+            titleToNumber-链接
+实现的代码如下：
+1234567891011class Solution &#123;public:    int titleToNumber(string s) &#123;        int sum=0;        for(int i=0;i&lt;s.size();i++)        &#123;            sum=sum*26+(s[i]-&apos;A&apos;+1);        &#125;        return sum;    &#125;&#125;;
+一道水题……
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/04/08/leetcode-13/">
+            
+                <span>Leetcode-13</span>
+        </a>
+        <div class="abstract-content">
+            romanToInt-链接
+实现的代码如下：
+这道题不难，就是字多了点给人的感觉好像很难，其实就是你自己多用几个if  else  然后将它给的特殊情况涵盖进去就可以了
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455class Solution &#123;public:    int romanToInt(string s) &#123;        int sum=0;          int m=s.size();     ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/08</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href="/2019/04/08/leetcode-20/">
             
                 <span>Leetcode-20</span>
@@ -532,130 +659,6 @@ height:50vh;
             <!-- date  -->
             <div class="abstract-date">
                 <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/04/Leetcode-204/">
-            
-                <span>Leetcode-204</span>
-        </a>
-        <div class="abstract-content">
-            conutPrimes-链接
-实现的代码如下：
-1234567891011121314151617181920212223class Solution &#123;public:    int countPrimes(int n) &#123;         int count=0;         for(int i=2;i&lt;n;i++)  //题目给的是小于n；         &#123;             int x=1;  //给出一个标记             for(int j=2;j*j&lt;=i;j++)             &#123;     ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/04</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/04/Leetcode-09/">
-            
-                <span>Leetcode-09</span>
-        </a>
-        <div class="abstract-content">
-            bool isPalindrome-链接
-实现的代码如下：
-123456789101112131415161718class Solution &#123;public:    bool isPalindrome(int x) &#123;        long long  ans=0,sign,x1=x;//定义long long类型以防溢出          sign=(x&lt;0)? -1:1;          while(x)          &#123;              ans=ans*10+x%10;              x/=10;         ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/04</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/04/Leetcode-01/">
-            
-                <span>Leetcode-01</span>
-        </a>
-        <div class="abstract-content">
-            Tow Sum-链接
-实现的代码如下：
-12345678910111213141516171819class Solution &#123;public:    vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) &#123;         vector&lt;int&gt;ans;          for(int i=0;i&lt;nums.size();i++)          &#123;              for(int j=i+1;j&lt;nums.size();j++)      ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/04</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Leetcode">Leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/03/Leetcode-07/">
-            
-                <span>Leetcode-07</span>
-        </a>
-        <div class="abstract-content">
-            Digital inversion-链接
-实现的代码如下：
-1234567891011121314151617181920class Solution &#123;public:    int reverse(int x) &#123;       if(x==0)            return 0;        long long  sum=0;  //如果这里是int类型就会爆数据                          //因为反过来后的数可能会溢出        while(x!=0)        &#123;            sum=sum*10+(x...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/03</span>
             </div>
             <!-- tags  -->
             
@@ -1575,9 +1578,47 @@ height:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 44
+        Total : 48
         </div>
         <!-- search  -->
         
@@ -1590,6 +1631,26 @@ height:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/11</span><a class="archive-post-title" href="/2019/07/11/<map>映射/"><map>映射</map></a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/11</span><a class="archive-post-title" href="/2019/07/11/<set>集合/"><set>集合</set></a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/10</span><a class="archive-post-title" href="/2019/07/10/堆(最大堆)/">堆(最大堆)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/10</span><a class="archive-post-title" href="/2019/07/10/二分搜索树/">二分搜索树</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -1733,12 +1794,12 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-171/">Leetcode-171</a>
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-13/">Leetcode-13</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-13/">Leetcode-13</a>
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href="/2019/04/08/leetcode-171/">Leetcode-171</a>
         </li>
     
     
@@ -1816,13 +1877,13 @@ height:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
+        <span class="sidebar-tag-name" data-tags="算法与数据结构"><span class="iconfont-archer">&#xe606;</span>算法与数据结构</span>
+    
         <span class="sidebar-tag-name" data-tags="Leetcode"><span class="iconfont-archer">&#xe606;</span>Leetcode</span>
     
         <span class="sidebar-tag-name" data-tags="C++"><span class="iconfont-archer">&#xe606;</span>C++</span>
     
         <span class="sidebar-tag-name" data-tags="洛谷"><span class="iconfont-archer">&#xe606;</span>洛谷</span>
-    
-        <span class="sidebar-tag-name" data-tags="算法与数据结构"><span class="iconfont-archer">&#xe606;</span>算法与数据结构</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
